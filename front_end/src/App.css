@@ -1,0 +1,416 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.auth_bg {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #d0e8ff2e, #cbe2ff33);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.split_form {
+  width: 950px;
+  height: 90vh;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; 
+  box-shadow: 0 0 20px 4px rgba(0, 123, 255, 0.3);
+
+
+
+}
+
+
+
+.form_left,
+.form_right {
+  width: 48%;
+  height: 95%;
+  border-radius: 5px;
+  background-color: white
+}
+
+.form_left {
+  background-image: url("./Assets/form_bg.jpg");
+  /* Replace with actual image URL */
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  position: relative;
+  color: #f0f0f0;
+  right : 1.8%;
+ 
+}
+
+
+
+.form_left::before {
+  content: "";                /* Necessary for the pseudo-element */
+  position: absolute;         /* Position it absolutely */
+  top: 0;                     /* Cover the entire container */
+  left: 0;                    /* Cover the entire container */
+  right: 0;                   /* Cover the entire container */
+  bottom: 0;                  /* Cover the entire container */
+  background-color: #cbe2ff33;
+  border-radius: 5px;        /* Match the border radius of the parent */
+  z-index: 1;                /* Make sure it appears above the background */
+}
+
+.form_left > * {
+  position: relative;         /* Ensure child elements appear above the overlay */
+  z-index: 2;                /* Raise child elements above the overlay */
+}
+.dd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+ margin: 15px;
+}
+
+.dx {
+  display: flex;
+  align-items: flex-end;
+  /* Align items to the bottom */
+  justify-content: space-between;
+  font-size: 10px;
+  position: absolute;
+  /* Position it absolutely */
+  bottom: 0;
+  /* Stick to the bottom */
+  left: 0;
+  /* Align to the left */
+  right: 0;
+  /* Align to the right */
+  margin: 10px;
+
+}
+
+.profile-container {
+  position: relative;
+  /* To position the text and image correctly */
+  display: flex;
+  align-items: center;
+  /* Align items vertically centered */
+}
+
+.profile-imagee {
+  width: 40px;
+  /* Set width for the profile image */
+  height: 40px;
+  /* Set height for the profile image */
+  border-radius: 50%;
+  /* Make the image circular */
+  padding: 1px;
+  background: linear-gradient(45deg, #00bfff, #1e90ff, #00bfff);
+  /* Gradient color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  /* Ensure the image covers the area without distortion */
+}
+
+.bottom_left {
+  margin-left: 4px;
+}
+
+.top_right {
+  padding: 6px;
+  border: 1px solid #f0f0f0b3;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: lighter;
+  background-color: rgba(255, 255, 255, 0.2); /* semi-transparent background */
+  backdrop-filter: blur(8px); /* blurs background behind */
+  -webkit-backdrop-filter: blur(8px); /* for Safari support */
+  transition: background-color 0.8s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.top_right:hover {
+  background-color: black; /* Background color on hover */
+  color: #f0f0f0; /* Text color on hover */
+}
+
+
+
+
+
+
+.bottom_right {
+  color: #f0f0f0;                    /* Initial color */
+  animation: blink 3s infinite; 
+  font-weight: lighter;
+  font-style: italic;
+}
+
+
+@keyframes blink {
+  0% {
+    color: #f0f0f0;                  /* Start with this color */
+  }
+  50% {
+    color: #87dbfa;                  /* Change to light sky blue */
+  }
+  100% {
+    color: #f0f0f0;                  /* Change back to initial color */
+  }
+}
+
+
+
+
+
+.form_right {
+  width: 40%;
+  height: 90%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h2 {
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.subtext {
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.input-field {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000; /* Border color */
+  font-size: 16px;
+  background-color: white
+} 
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px; /* High border radius */
+  border: none;
+  background-color: #000; /* Button color */
+  color: #fff; /* Button text color */
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #333; /* Darker shade on hover */
+}
+
+.auth-container {
+  display: flex;
+  justify-content: space-between; /* Space out the items */
+  align-items: center;            /* Align items vertically in the center */
+  width: 95%;                    /* Full width container */
+  padding: 0;
+  margin: 0 auto;                /* Padding for spacing */
+  margin-top: 10px;
+}
+
+
+.forgot-password {
+  margin: 10px 0;
+  color: #000;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.signup-btn {
+  border: none;                   /* Remove default button border */
+  border-radius: 5px;             /* Slightly rounded corners */
+  cursor: pointer;                /* Pointer on hover */
+  font-size: 15px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+}
+
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+  margin-top: 5px;
+}
+
+.line {
+  flex: 1; /* Grow to fill the available space equally */
+  height: 1px; /* Height of the line */
+  background-color: #00000058; /* Line color */
+}
+
+.or-divider span {
+  margin: 0 10px; /* Space around the OR text */
+  color: #000; /* Text color */
+}
+
+.social-button {
+  display: flex;                    /* Use flexbox for alignment */
+  align-items: center;             /* Center items vertically */
+  justify-content: center;          /* Center items horizontally */
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;             /* High border radius */
+  border: 1px solid #000000a4;          /* Border color */
+  background-color: white;   /* Background color */
+  color: black;                    /* Text color */
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 13px;
+}
+
+.social-button img {
+  margin-right: 10px;              /* Space between icon and text */
+  width: 20px;                     /* Set width for the icon */
+  height: 20px;                    /* Set height for the icon */
+}
+
+
+.social-button:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  .split_form {
+    width: 90%; /* Adjusts width to 90% of the viewport width */
+    height: 80vh; /* Adjusts height to 80% of the viewport height */
+    border-radius: 10px; /* Increases border-radius for a more rounded look */
+  }
+}
+@media (max-width: 880px) {
+.form_left{
+  display: none;
+}
+.form_right{
+  flex: 1;
+}
+
+}
+
+@media (max-width: 500px) {
+  .form_right {
+    width: 100%; /* Full width for small screens */
+    height: auto; /* Auto height for flexibility */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .input-field {
+    width: 90%; /* Reduce width of input fields */
+    padding: 8px; /* Reduce padding */
+    font-size: 14px; /* Reduce input font size */
+  }
+
+  /* Decrease placeholder text size */
+  .input-field::placeholder {
+    font-size: 12px; /* Smaller placeholder text */
+  }
+
+  .login-button {
+    width: 100%; /* Full width for login button */
+    padding: 8px; /* Reduce padding */
+    font-size: 14px; /* Decrease button font size */
+  }
+
+  .auth-container {
+    align-items: stretch;   /* Full width items */
+    margin-top: 8px; /* Reduce margin */
+  }
+
+  .forgot-password {
+    font-size: 14px; /* Adjust font size */
+    margin: 8px 0; /* Reduce margin */
+  }
+
+  .signup-btn {
+    font-size: 14px; /* Adjust font size */
+    margin: 5px 0; /* Adjust margin */
+  }
+
+  .or-divider {
+    margin: 15px 0; /* Adjust margin */
+  }
+
+  .or-divider span {
+    font-size: 14px; /* Decrease text size */
+    margin: 0 5px; /* Adjust margin */
+  }
+
+  .social-button {
+    width: 100%; /* Reduce width of social buttons */
+    padding: 10px; /* Reduce padding */
+    font-size: 15px; /* Decrease font size for button text */
+    margin-bottom: 8px; /* Reduce margin */
+  }
+
+  .social-button img {
+    width: 16px; /* Decrease icon size */
+    height: 16px;
+    margin-right: 8px; /* Adjust spacing between icon and text */
+  }
+}
+
+@media (max-width:370px) {
+  .social-button {
+    padding: 7px; /* Reduce padding */
+    font-size: 14px; /* Decrease font size for button text */
+    margin-bottom: 8px; /* Reduce margin */
+  }
+
+  .social-button img {
+    width: 14px; /* Decrease icon size */
+    height: 14px;
+    margin-right: 8px; /* Adjust spacing between icon and text */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

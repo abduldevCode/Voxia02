@@ -1,0 +1,152 @@
+
+  
+  .open-modal-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .open-modal-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Modal Styling */
+  .modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideIn 0.5s forwards;
+  }
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Modal Header with Close Button */
+  .modal-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Text input area that grows with text */
+  .post-text-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    resize: none;
+  }
+  
+  /* Media preview area */
+  .media-preview-area {
+    width: 100%;
+    height: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .media-item {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+  }
+  
+  .media-item img, .media-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .remove-media {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 2px 5px;
+  }
+  
+  /* Media buttons for image and video */
+  .media-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .media-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .media-btn i {
+    margin-right: 5px;
+  }
+  
+  .media-btn input {
+    display: none;
+  }
+  
+  /* Post Button */
+  .post-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post-btn:hover {
+    background-color: #218838;
+  }
+  

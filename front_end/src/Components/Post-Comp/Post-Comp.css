@@ -1,0 +1,507 @@
+/* General container for the video post */
+.video-post-container {
+  width: 95.5%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(211, 211, 211, 0.419);
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* Header section with avatar, name, and description */
+.video-post-header {
+  padding: 16px;
+  padding-top: 8px;
+  padding-bottom: 0;
+}
+
+
+.post-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+
+
+
+
+
+
+.thumbnail-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.play-icon {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+/* Footer with stats */
+.video-post-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: #f7f7f7;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stat-item {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Action buttons section */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: #f7f7f7;
+}
+
+.action-button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+}
+
+.action-button:hover {
+  background-color: #e0e0e0;
+}
+
+.red {
+  color: #ff0000;
+  /* A more vibrant red */
+}
+
+.nom {
+  color: gray
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling for the video container (images and videos) */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.video-container.single-media .post-img {
+  height: 450px;
+  /* Default height for single or two media items */
+}
+
+.video-container.multi-media .post-img {
+  height: 250px;
+  /* Height for more than two media items */
+}
+
+.post-img {
+  width: 49.9%;
+  object-fit: fill;
+  background-color: #f0f0f0;
+  padding: 1px;
+  flex: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.jump {
+  -webkit-box-orient: vertical;
+  /* Required for line-clamp to work */
+  font-family: "AmstelvarAlpha", sans-serif;
+  font-style: oblique 23deg;
+  /*font-variation-settings: "slnt" 12;*/
+  font-size: 1.09rem;
+  margin-top: 10px;
+  color: #4a5568e0;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+.post-detail-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.post-detail-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+.nav-button {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+.prev-button {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-150px);
+}
+
+.next-button {
+  top: 50%;
+  left: 20px;
+  transform: translateY(150px);
+}
+
+.image-counter {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  z-index: 1010;
+}
+
+.image-slides-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-slide {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-button {
+  height: 60px;
+  width: 60px;
+}
+
+
+.image-slide-item {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-image {
+  max-width: 90%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.post-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.caption {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+
+.detail-media {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .post-detail-container {
+    padding: 10px;
+  }
+
+  .detail-image {
+    max-width: 100%;
+    max-height: 70%;
+  }
+
+  .nav-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .prev-button {
+    left: 10px;
+    transform: translateY(-100px);
+  }
+
+  .next-button {
+    left: 10px;
+    transform: translateY(100px);
+  }
+}
+
+/* Add horizontal swipe arrows for landscape mode */
+@media (orientation: landscape) {
+  .prev-button {
+    top: 50%;
+    left: 20px;
+    transform: translateY(0) rotate(90deg);
+  }
+
+  .next-button {
+    top: 50%;
+    right: 20px;
+    left: auto;
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.post-header09 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-pic09 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.user-info09 {
+  display: flex;
+  flex-direction: column;
+}
+
+.username005 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.post-date005 {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.caption {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 800px;
+  margin-bottom: 10px;
+}
+
+.like-info {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .post-detail-container {
+    padding: 10px;
+  }
+
+  .image-slides-container {
+    height: 60vh;
+    /* Smaller height on mobile */
+  }
+
+  .detail-media {
+    max-width: 100%;
+  }
+
+  .nav-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .prev-button {
+    left: 10px;
+    transform: translateY(-100px);
+  }
+
+  .next-button {
+    left: 10px;
+    transform: translateY(100px);
+  }
+
+  .caption {
+    font-size: 13px;
+  }
+}
+
+/* Add horizontal swipe arrows for landscape mode */
+@media (orientation: landscape) {
+  .prev-button {
+    top: 50%;
+    left: 20px;
+    transform: translateY(0) rotate(90deg);
+  }
+
+  .next-button {
+    top: 50%;
+    right: 20px;
+    left: auto;
+    transform: translateY(0) rotate(90deg);
+  }
+
+  .image-slides-container {
+    height: 80vh;
+    /* Taller in landscape mode */
+  }
+}

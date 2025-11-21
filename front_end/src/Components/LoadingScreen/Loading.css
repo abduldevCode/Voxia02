@@ -1,0 +1,148 @@
+/* src/components/LoadingScreen.css */
+.loading-container {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #dceeff, #bfe3ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+    position: relative;
+  }
+  
+  .logo-blue {
+    color: #007bff;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #aad4ff;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -12px;
+  }
+  
+  .subtitle {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .loader {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .spinner {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .loading-container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom right, #d0e8ff2e, #cbe2ff33);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 58px;
+    font-weight: bold;
+    color: #007bff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-blue {
+    color: #007bff;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    background-color: #90caff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 6px; margin-top:15px;
+    animation: pulse 1s infinite ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .loader {
+    margin-top: 24px;
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+
+

@@ -1,0 +1,121 @@
+/* General Page Styles */
+.notifications-page02 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    font-family: "AmstelvarAlpha", sans-serif;
+    font-style: oblique 23deg;
+    color: #000000a9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+}
+
+/* Notification List Styles */
+.notification-list09 {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+
+}
+
+.notification-item09 {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 3px;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgba(211, 211, 211, 0.419);
+    height: 90px;
+}
+
+
+.notification-item09 .read {
+    opacity: 0.75;
+}
+
+.notification-content {
+    display: flex;
+
+    padding: 15px;
+
+}
+
+.notification-text09 {
+    flex: 1;
+    min-width: 0;
+    margin-left: 15px;
+}
+
+.notification-title09 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #3b82f6;
+}
+
+.upc {
+    font-size: 12px;
+}
+
+
+.notification-message09 {
+    font-size: 14px;
+    color: #999;
+
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.notification-time09 {
+    font-size: 12px;
+    color: #55555585;
+    margin-top: 4px;
+}
+
+/* Notification Icon Styles */
+.notification-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-unread {
+    color: #3b82f6;
+}
+
+.icon-read {
+    color: #6b7280;
+}
+
+
+
+.avatar039 {
+    width: 40px;
+    /* Avatar size */
+    height: 40px;
+    /* Avatar size */
+    border-radius: 50%;
+
+}
+
+.ups02{
+    font-size: 25px;
+  color: #007bff;
+  position: relative;
+    top: 5px;
+}

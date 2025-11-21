@@ -1,0 +1,534 @@
+.feedss {
+
+  width: 55%;
+  margin-right: 1.5%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.card {
+
+  width: 90%;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+
+}
+
+
+
+.banners {
+  position: relative;
+}
+
+.banner-images {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.profile-images {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  transform: translateY(50%);
+  width: 130px;
+  height: 130px;
+  border: 4px solid white;
+  border-radius: 50%;
+  border-radius: 50%;
+  /* Make the image circular */
+  padding: 1px;
+  background: linear-gradient(45deg, #00bfff, #1e90ff, #00bfff);
+  /* Gradient color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name09 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.connections02 {
+  color: gray;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button {
+  padding: 8px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-button {
+  border: 1px solid #00000028;
+  background-color: white;
+  color: #000;
+  transition: box-shadow 0.3s ease;
+  /* Smooth transition */
+}
+
+.edit-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add a subtle shadow effect */
+}
+
+
+.more-button {
+  margin-top: 10px;
+
+}
+
+.details {
+  margin-top: 6%;
+  color: gray;
+  font-size: 16px;
+  display: flex;
+  gap: 20px;
+}
+
+.details div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-infos {
+  margin-top: 80px;
+  /* Adjust according to profile image height */
+  padding: 0 16px 16px 16px;
+}
+
+.nav02 {
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  gap: 10px;
+
+}
+
+.nav-button02 {
+  padding: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.nav-button02.active {
+  color: #0073b1;
+  border-bottom: 2px solid #0073b1;
+}
+
+.connections-count {
+  margin-left: 5px;
+  background-color: #eaeaea;
+  color: #555;
+  border-radius: 10px;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.tab-content {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid #eaeaea;
+  width: 99%;
+}
+
+
+.About-you {
+  background-color: white;
+  width: 100%;
+  color: #666;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.About-you h1,
+.album-header h1 {
+  color: #000;
+  font-weight: lighter;
+}
+
+.info {
+  font-weight: 600;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info span {
+  font-weight: lighter;
+}
+
+
+
+
+
+/* PhotoAlbum.css */
+.photo-album {
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  max-width: 768px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+.album-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.album-header h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.see-all-link {
+  background-color: #ebf4ff;
+  color: #007bff;
+  border: 1px solid #007bff1c;
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding: 7px;
+  border-radius: 5px;
+  text-decoration: none;
+
+}
+
+
+
+.grid {
+  display: grid;
+  gap: 8px;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+  height: 160px;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 120px;
+}
+
+.photo-container {
+  position: relative;
+  padding-top: 66.67%;
+  /* Maintain aspect ratio of 3:2 */
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.photo-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.you {
+  font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.edit-profile-modal {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.form-content {
+  display: flex;
+}
+
+.bio-label {
+  color: rgba(0, 0, 0, 0.822);
+  font-weight: bold;
+  margin-top: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 550;
+}
+
+.image-section {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.details-section {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.labelin {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.578);
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profile-preview {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #666;
+  /* Border for a professional look */
+}
+
+.background-preview {
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid #666;
+  /* Border for a professional look */
+}
+
+.update-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #000;
+  /* Professional black */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+
+
+/* Profile.css */
+
+
+.cardin {
+  width: 428px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 20px;
+  height: auto;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  height: 500px;
+}
+
+.cardin-header {
+  padding-bottom: 16px;
+  border-bottom: 2px solid #ddd;
+}
+
+.cardin-title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.cardin-content {
+  padding-top: 16px;
+}
+
+/* Bio section */
+.bio {
+  margin-bottom: 24px;
+}
+
+.sectionin-title {
+  font-size: 20px;
+  color: black;
+}
+
+.bio-text {
+  font-size: 14px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Separator */
+.separator {
+  border-top: 1px solid #ddd;
+  margin: 16px 0;
+}
+
+/* Personal information section */
+.personal-info {
+  display: grid;
+  gap: 16px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.info {
+  font-size: 14px;
+  font-weight: lighter;
+  color: #6c757d;
+}
+
+.status09 {
+  background-color: #ebf4ff;
+  color: #007bff;
+  border: 1px solid #007bff52;
+  padding: 3px 6px;
+  border-radius: 12px;
+  font-weight: lighter;
+}
+
+.email {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
